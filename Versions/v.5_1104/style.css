@@ -1,0 +1,569 @@
+/* Importation de la police d'écriture "Raleway" */
+@font-face {
+  font-family: "Raleway", sans-serif;
+  @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+}
+ 
+/* Réglage de la marge et application de la police d'écriture "Raleway" du corps de la page */ 
+body { 
+  font-family: "Raleway", 'Times New Roman', Times, serif; 
+}
+ 
+/* Titres principaux en gras et taille 22px */
+h1, h2, h3, h4 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+/* Organisation de la page en grille avec la fonction "grid" */ 
+#grill {
+  display: grid; 
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 3fr 4fr 3fr 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "article1 aside"
+    "article2 article2"
+    "footer footer"
+    "test test"; 
+     margin: 0; 
+  }
+
+
+/* Taille et marge du contenu de la grille */ 
+.content {  
+  height: 100vh;
+ }
+
+/* Placement de la partie "header" dans la grille */ 
+header {
+  grid-area: header; 
+  display: grid;
+  grid-auto-columns: auto 1fr; 
+  grid-template-areas: 
+  "logo"
+  "mainBar";
+  size: auto;   
+ }
+
+/* Taille et position du logo "Reservia" */
+header .logo {  
+  grid-area: logo;
+  width: 91.5px; 
+}
+
+header .mainBar {
+  grid-area: mainBar;
+  font-size: 16px;   
+  text-align: right; 
+}
+  
+/* Position linéaire des liens de navigation principaux */  
+.mainBar ul li { 
+  grid-area: mainBar;  
+  display: inline; 
+}
+
+/* Couleur, apparence invisible des liens de navigation */  
+.mainBar a {
+text-decoration: none;
+color: #0065FC;
+padding: 8px;  
+}
+ 
+.mainBar a :visited {
+  color: black;
+}
+/* Effet d'activation des liens de navigation */  
+
+.mainBar a :active {
+  color: #0065FC; 
+}
+
+/* Position de la partie "header" dans la grille */ 
+main {
+  grid-area: main;
+  background-color: green;
+   
+}
+
+/* Taille du sous-titre sous le "h1" */
+.mainContent p {
+  font-size: 16px;
+}
+ 
+
+/* Taille de l'icone "localisation" */
+.location i {
+  width: 13px;
+  height: 18px;
+  background-color: #F2F2F2;
+  padding: 17px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px; 
+  border: none;
+}
+
+/**/
+.searchButton {
+  background-color: #0065FC;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 50px;
+  width: 135px;
+  color: white;
+  margin: 0;
+  text-align: center;
+  border: none;
+}
+
+input {
+  height: 49px;
+  width: 235px;
+  margin: -4px;
+  font-size: 18px;
+  font-style: bold;  
+}
+ 
+.city {
+  border-color: #F2F2F2;
+  border-width: 1px;
+  height: 49px;
+  border-left: none;
+  border-right: none;
+} 
+  
+/* Taille et apparence de la police des boutons filtres */
+.filters p {
+  font-weight: bold;
+  font-size: 18px;
+}
+ 
+
+/* Taille et apparence des icones filtres en forme ronde */ 
+.filters ul li {   
+  text-decoration: none; 
+  display: inline;
+  width: 24px;  
+  
+} 
+
+/* Position linéaire des boutons filtres */
+.roundIcon {
+  display: inline;
+  flex-direction: row;
+
+}
+
+/* Personnalisation des icônes rondes des filtres */
+.roundIcon li i { 
+  color: #0065FC; 
+  background-color: #DEEBFF;
+  border-color: #F2F2F2;
+  border-width: 3px;
+  border-radius: 50%;
+  padding: 20px;
+  vertical-align: middle;
+  text-align: center; 
+  z-index: 2;
+} 
+
+
+/**/
+button {
+  grid-area: main;
+  border-left: none; 
+  height: 54px;
+  width: 150px;
+  margin-left: 0;
+  background-color: white;
+  padding-right: 40px;
+  border-color: #0065fc;
+  background: none;
+  margin-left: -20px; 
+  z-index: 1;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  justify-content: right;
+  font-size: 18px;
+
+} 
+
+
+
+ /* Apparence de l'icône "information" en forme ronde */ 
+
+.infoIcon i {
+  grid-area: main;
+  width: 24px;  
+  border-radius: 50%; 
+  border: 3px;
+  border-color: magenta;
+  background-color: white;
+  text-align: center;
+  vertical-align: middle;
+  padding: 4px;
+  margin: 4px;
+} 
+/* Taille du texte "information" */
+.info p {
+  grid-area: main; 
+  font-size: 16px;
+}  
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* Couleur de fond et position des hébergements dans la grille */
+article.article1 {
+  background-color: crimson;
+  margin: 0;
+  grid-area: article1;
+  /* background-color: #f2f2f2; */ 
+}
+
+/**/
+.titleArticle div {
+margin: 0;
+}
+ 
+
+
+/* Positionnement des cartes dans les résultats d'hébergements */
+.lodgingCards { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-template-areas: 
+  "card1 card2 card3"
+  "card4 card5 card6";
+  border-radius: 15%;  
+  margin: 0;
+  padding: 0; 
+  }
+   
+/* Customisation des cartes de résultats d'hébergements */   
+.cardArticle {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 150px ;
+  border-radius: 10px; 
+  padding: 5px;
+  box-shadow: -1px -1px 6px grey inset;
+
+
+}
+
+/* Taille des images des cartes */
+.cardArticle img {
+  width: 100%;
+  object-fit: cover;
+  height: 150px;
+  border-top-right-radius: 10px; 
+  border-top-left-radius: 10px; 
+
+}
+
+/* Position des cartes dans la grille de l'article 1 "Hébergements" */ 
+.card1 {
+  grid-area: card1;
+  max-width: 250px;
+
+
+}
+.card2 {
+  grid-area: card2;
+  max-width: 250px;
+
+}
+.card3 {
+  grid-area: card3;
+  max-width: 250px;
+
+}
+.card4 {
+  grid-area: card4;
+  max-width: 250px;
+
+}
+.card5 {
+  grid-area: card5; 
+  max-width: 250px;
+}
+.card6 {
+  grid-area: card6;
+  max-width: 250px;
+
+}
+
+
+ 
+/**/
+aside {
+  grid-area: aside;
+  
+  background-color: burlywood; 
+  /* margin: 0;
+  background-color: #f2f2f2;  */  
+}
+
+/* Taille de l'icône "Les plus populaires dans le titre "h3" */
+.asideIcon { 
+  width: 20px;
+  }
+
+  /**/
+.asideTitle ul li {
+  list-style: none;
+  display: inline-block;
+}
+  
+/**/
+.asideCards {
+  display: grid;
+  display: grid;
+  grid-template-columns: 145px;
+  grid-template-rows: 70px 70px 70px;   
+  grid-template-areas: 
+  "card7"
+  "card8"
+  "card9";
+  grid-row-gap: 30px;   
+  border-radius: 10px; 
+}
+
+/**/
+ .cardAside {
+display: grid;
+grid-template-rows: auto 1fr;
+grid-template-areas:
+"asideImg infoCard2" ;
+box-shadow: -1px -1px 6px grey inset;
+
+}
+
+/**/
+.asideImg img {
+  max-width: 125px;
+  max-height: 137px;
+  object-fit: cover;
+  border-bottom-left-radius: 10%;
+  border-top-left-radius: 10%;  
+}   
+
+/**/ 
+.infoCard2 {
+  background-color: white;
+  width: 210px;
+  max-height: 133px;
+  border-bottom-right-radius: 10%;
+  border-top-right-radius: 10%;  
+  border-width: 4px;
+  border-color: magenta; 
+}
+
+/**/ 
+.card7 { 
+  grid-area: card7;
+  max-width: 135px;
+  max-height: 137px;
+}   
+
+.card8 {
+  grid-area: card8; 
+  max-width: 135px;
+  max-height: 137px;
+}
+
+.card9 {
+  grid-area: card9; 
+  max-width: 135px;
+  max-height: 137px;
+}
+
+/* Couleur des étoiles pleines */
+ .fullStar i {  
+  color: #0065FC;
+  margin-top: -10px; 
+
+} 
+
+/* Couleur des étoiles vides */
+ .emptyStar i {  
+  color: grey;
+  margin-top: -10px; 
+   
+} 
+
+/* Taille et position linéaire des étoiles */
+.star i {
+  width: 12px;
+  display: flex;
+  display: inline-flex;
+  flex-direction: row;
+  margin-top: 0; 
+
+
+}  
+
+
+
+/* Position et couleur de fond de l'article 2 "Activités" */
+article.article2 {
+  margin: 0;
+  grid-area: article2;
+  background-color: chartreuse; 
+}
+
+.activityCards img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+/* Création de la grille de résultats "Activités" */
+.activityCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+  "card10 card11 card13 card14"
+  "card10 card12 card13 card15"; 
+  border-radius: 10px;
+  align-content: center;
+  align-items: center;
+}
+
+.infoCard3 {
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  
+}
+
+/* Placement des cartes de résultats dans la grille "Activités" */ 
+.card10 {
+  grid-area: card10;
+}
+
+.card11 {
+  grid-area: card11;
+}
+
+.card12 {
+  grid-area: card12;
+}
+
+.card13 {
+  grid-area: card13;
+}
+
+.card14 {
+  grid-area: card14;
+}
+
+.card15 {
+  grid-area: card15;
+}
+ 
+/* Mise en page des listes des liens du footer en 3 colonnes */
+footer { 
+  margin: 0;
+  grid-area: footer;
+ background-color: mediumblue;
+ 
+}
+
+/* Création de la grille du "footer" */ 
+.footerMenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "about"
+  "ourLodgings"
+  "assistance"; 
+  
+} 
+
+/* Placement des listes de liens dans la grille du "footer" */
+
+.about  {  
+  grid-area: about;
+}
+
+.ourLodgings ul li {
+  grid-area: ourLodgings;
+}
+
+.assistance ul li {
+  grid-area: assistance;
+}
+
+
+footer a {
+  color: black;
+}
+/* Mise en page des listes des liens du footer en colonne */
+
+footer ul li { 
+  text-decoration: none; 
+  display: grid; 
+}
+ 
+/* Réorganisation des grilles pour affichage smartphone avec "aside" avant "article1" */
+@media screen and (max-width: 700px) {
+#grill {
+  display: grid;  
+  grid-template-columns: 1fr; 
+  grid-template-areas:
+"header"  
+"main"
+"aside"
+"article1"  
+"article2"
+"footer";  
+}
+
+/* Disposition de l'article "Hébergements" en 1 colonne pour affichage smartphone */
+.article1 {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-areas: 
+"card1"
+"card2"
+"card3"
+"card4"
+"card5"
+"card6";
+}
+
+/* Disposition de l'article "Activités" en 1 colonne pour affichage smartphone */
+.article2 {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-areas: 
+"card10"
+"card11"
+"card12"
+"card13"
+"card14"
+"card15";
+}  
+ 
+
+/* Disposition du "footer" en 1 colonne pour affichage smartphone */
+
+footer {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-areas: 
+  "about"
+  "ourLodgings"
+  "Assistance";
+} 
+
+} 
