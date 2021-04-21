@@ -1,0 +1,377 @@
+/* Importation de la police d'écriture "Raleway" */
+@font-face {
+  font-family: "Raleway", sans-serif;
+  @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+}
+/* Importation des icônes issues de "Font Awesome" */
+
+npm install --save @fortawesome/fontawesome-free
+$fa-font-path:        "../webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss"; 
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+
+
+/* Titres principaux en gras et taille 22px */
+h1, h2, h3, h4 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+ 
+
+#grill {
+  display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 3fr 4fr 3fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "article1 aside"
+    "article2 article2"
+    "footer footer";
+    row-gap: 110px;
+    column-gap: 40px;
+    height: 100vh;   
+ 
+  }
+.content { 
+  border-radius: 10px;  
+  justify-content: space-evenly; 
+  
+}
+
+
+header {
+  grid-area: header; 
+  display: grid;
+  grid-auto-columns: 2fr;
+}
+
+/* Taille et position du logo "Reservia" */
+header img { 
+  width: 91.5px;
+  text-align: left; 
+}
+
+
+/* Position en ligne des liens de navigation */  
+.mainBar ul li { 
+  grid-area: mainBar; 
+  grid-column: 2;
+  display: inline-block; 
+}
+
+/* Couleur et apparence invisible des liens de navigation */  
+.mainBar a {
+text-decoration: none;
+color: #0065fc;  
+padding: 8px;
+
+
+
+}
+.mainBar {
+grid-column: 4; 
+
+} 
+
+main {
+  grid-area: main;
+}
+
+
+/* Taille du sous-titre */
+.mainContent p {
+  font-size: 16px;
+}
+
+
+
+/* Taille de l'icone "localisation" */
+.location img {
+  width: 13px;
+  height: 18px;
+}
+ 
+
+/* Apparence des boutons des filtres */
+.filters {
+  font-weight: bold;
+  font-size: 18px;
+}
+ 
+
+/* Apparence des icones filtres en forme ronde */
+
+ 
+ 
+.filters ul li {   
+  text-decoration: none; 
+  display: inline;
+  width: 24px; 
+
+
+} 
+.icon {
+  display: inline;
+  flex-direction: row;
+
+}
+
+.icon li i { 
+  color: #0065FC; 
+  background-color: #DEEBFF;
+  border-color: #F2F2F2;
+  border-width: 3px;
+  border-radius: 50%;
+  padding: 20px;
+  vertical-align: middle;
+  text-align: center; 
+  
+} 
+button {
+  grid-area: main;
+  border-left: none; 
+  height: 50px;
+  margin-left: 0;
+  background-color: white;
+  padding-right: 40px;
+  border-color: #0065fc;
+} 
+
+.searchButton {
+  background-color: #0065FC;
+}
+ /* Apparence de l'icône "information" en forme ronde */
+.infoIcon i { 
+  grid-area: main;
+
+  width: 24px;  
+  border-radius: 50%;
+  border-width: 1px;
+  border-color: #f2f2f2;
+ }
+
+/* Taille du texte "information" */
+.info p {
+  grid-area: main; 
+  font-size: 16px;
+}  
+
+article.article1 {
+  grid-area: article1;
+  background-color: #f2f2f2;
+  border-radius: 10px; 
+  display: grid;
+  grid-template-rows: 4fr;
+  grid-template-columns: 3fr;
+  grid-template-areas: 
+  "card1 card3 card5"
+  "card2 card4 card6" ;
+}
+ 
+/* Taille des étoiles */
+.article1 .fullStar i { 
+  width: 12px;
+  color: #0065FC;
+} 
+.article1 .emptyStar i {
+   width: 12px;
+  color: red;
+}
+
+
+ /*MODIFIER LES TAILLES START*/
+ .lodgingImg {
+  width: 40px;
+}
+ 
+.bigSize {
+  width: 40px;
+}
+.smallSize {
+  width: 40px;
+}
+.asideImg  {
+  width: 40px;
+}
+ /*MODIFIER LES TAILLES START*/
+
+h2 {
+  grid-template-rows: 1;
+}
+.card1 {
+border-radius: 10px;
+grid-template-rows: 2;
+grid-template-columns: 1;
+}
+
+.card2 { 
+grid-template-rows: 3;
+grid-template-columns: 1;
+}
+
+.card3 {
+grid-template-rows: 2;
+ grid-template-columns: 2;
+}
+
+.card4 {  
+grid-template-rows: 3;
+grid-template-columns: 2;
+}
+
+.card5 {
+grid-template-rows: 2;
+grid-template-columns: 3;
+}
+
+.card6 {   
+grid-template-rows: 3;
+grid-template-columns: 3;
+}
+
+aside {
+  grid-area: aside;
+  display: grid;
+  grid-template-rows: 3fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "card7"
+  "card8"
+  "card9";
+  background-color: #f2f2f2;
+  border-radius: 10px; 
+}
+
+aside .fullStar i {
+  grid-area: aside;
+
+  width: 12px;
+  color: #0065FC;
+} 
+aside .emptyStar i {
+  grid-area: aside;
+
+  width: 12px;
+  color: red;   
+}
+
+aside p {
+text-align: right;
+}
+
+.asideIcon { 
+width: 20px;
+}
+
+.card7 {
+grid-area: aside;
+grid-row: 1;
+text-align: right;
+align-items: center;
+justify-items: center;
+}
+
+.card8 {
+grid-area: aside;
+grid-row: 2;
+align-items: center;
+justify-items: center;
+}
+
+.card9 { 
+grid-area: aside;
+grid-row: 3;
+align-items: center;
+justify-items: center;
+}
+
+article.article2 {
+  grid-area: article2;
+  display: grid;
+  grid-template-columns: 4fr; 
+  grid-template-rows: 2fr;
+  grid-template-areas: 
+  "card10 card11 card13 card14"
+  "card10 card12 card13 card15";
+  
+}
+
+.bigSize {
+grid-row-start: 1;
+grid-row-end: 2;
+}
+
+/*Mise en page des listes des liens du footer en 3 colonnes */
+footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-template-areas: 
+  "about"
+  "ourLodging"
+  "assistance";
+  background-color: #f2f2f2;
+}
+
+
+/* Mise en page des listes des liens du footer en colonne */
+footer a { 
+text-decoration: none;
+justify-items: center;
+color: grey;
+}
+
+
+/* Réorganisation des grilles pour affichage smartphone */
+@media screen and (max-width: 580px) {
+#grill {
+  display: grid;  
+  grid-template-columns: 1fr; 
+  grid-template-areas:
+"header"  
+"main"
+"aside"
+"article1"  
+"article2"
+"footer";  
+}
+
+/* Disposition de l'article "Hébergements" en 1 colonne pour affichage smartphone */
+.article1 {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-areas: 
+"card1"
+"card2"
+"card3"
+"card4"
+"card5"
+"card6";
+}
+
+/* Disposition de l'article "Activités" en 1 colonne pour affichage smartphone */
+.article2 {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-areas: 
+"card10"
+"card11"
+"card12"
+"card13"
+"card14"
+"card15";
+} 
+
+/*Disposition du footer en 1 colonne pour affichage smartphone */
+footer {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-areas: 
+  "about"
+  "ourLodgings"
+  "Assistance";
+}
+} 

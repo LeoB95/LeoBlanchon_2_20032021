@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/> 
+    
+<!-- Titre de l'url -->
+    <title>Bienvenue sur Réservia !</title>
+</head>
+
+<body>  
+<!-- En haut à gauche : Logo Réservia -->
+
+<div id="grill" class="content"> 
+        <header>        
+         <img class="logo" src="images/Reservia.svg" alt="logoReservia"> 
+  
+<!-- En haut à droite: 3 ancres "Hebergements", "Activités" et "S'inscrire" -->
+        <div class="mainBar"> 
+                <ul>        
+            <li><a href="#"> Hébergements </a></li>
+            <li><a href="#">Activités </a></li>
+            <li><a href="#"> S'inscrire </a></li>
+        </ul>  
+        </div>    
+</header>  
+
+  <main> 
+        <h1>
+            Trouvez votre hébergement pour des vacances de rêves
+        </h1>
+<div class="mainContent">
+        <p>
+            En plein centre ville ou en pleine nature
+        </p>
+</div> 
+<!-- Icone "localisation" et bouton "recherche des villes" -->  
+    <p>
+    <div class="location"> 
+        <form action="rechercher" method="GET">
+                <i class="fas fa-map-marker-alt"></i> 
+             <input id="search" type="text" name="resultats_par_pages" placeholder="Marseille, France">
+            <input class="searchButton" for="search" value="Rechercher"> </input>
+            <!--
+            <input type="submit" value="Rechercher">  --> 
+        </form>
+</div>
+    </p>         
+    
+
+<!-- 4 icones et 4 boutons filtres -->
+    <div class="filters">
+        <p>Filtres</br>
+<!-- Rajouter span pour attribut  --> 
+<ul>
+        <div class="icon">
+        <li><i class="fas fa-money-bill-wave"></i> <button>Economique</button></li>
+</div>
+        <div class="icon">
+        <li><i class="fas fa-child"></i> <button>Familial</button></li>
+</div>
+        <div class="icon">
+        <li><i class="fas fa-heart"></i> <button>Romantique</button></li>
+</div>
+        <div class="icon">
+        <li><i class="fas fa-dog"></i><button>Animaux autorisés</button></li> 
+</div>
+    </ul>
+    </p>
+</div> 
+<div class="info"> 
+        <div class="infoIcon">
+        <i class="fas fa-info"></i>
+</div>
+        Plus de 500 logements sont disponibles dans cette ville 
+        </div> 
+</main>     
+<!-- Proposition 1 faire une card -->
+<article class="article1">  
+        <!-- Icone "information" -->
+ 
+                <!-- Bloc 1: "Hébergements à Marseille" -->   
+        <h2>Hébergements à Marseille</h2> 
+ 
+<!--Sous-bloc 1: "Auberge la Cannebière" et "Hôtel de la mer" -->
+        <div class="card1">
+        <img class="lodgingImg" src="images/lodgings/small_size/lodging1s.jpg" alt="lodging1Small">
+        <p>Auberge de la Cannebière</br> 
+        Nuit à partir de <strong>25€</strong></p>
+<!-- Classement -->
+<!-- 4 étoiles -->
+            <div class="fullStar">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="emptyStar">           
+                <i class="fas fa-star"></i>
+                </div> 
+        </div>
+
+<!-- Proposition 2 -->
+<div class="card2">  
+        <img class="lodgingImg" src="images/lodgings/small_size/lodging2s.jpg" alt="lodging2Small">
+        <p>Hôtel de la mer</br> 
+<!-- Prix -->
+        Nuit à partir de 45<strong>€</strong></p>
+<!-- Classement -->
+<!-- 3 étoiles -->
+            <div class="fullStar">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="emptyStar">           
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+             </div>   
+        </div>
+
+<!-- Sous-bloc 2: "Hôtel du port" et "Auberge le panier" -->
+
+<!-- Proposition 3 -->
+        <div class="card3"> 
+        <img class="lodgingImg" src="images/lodgings/small_size/lodging3s.jpg" alt="lodging3Small">
+        <p>Hôtel du port</br>
+<!-- Prix -->
+        Nuit à partir de 52<strong>€</strong></p>
+<!-- Classement -->
+<!-- 5 étoiles -->
+            <div class="fullStar"> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>             
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> 
+            </div> 
+        </div>
+<!-- Proposition 4 -->
+<div class="card4">  
+        <img class="lodgingImg" src="images/lodgings/small_size/lodging4s.jpg" alt="lodging4Small">
+        <p>Auberge le panier</br>
+<!-- Prix -->
+        Nuit à partir de <strong>23€</strong></p>
+<!-- Classement -->
+<!-- 4 étoiles -->
+        
+        <div class="fullStar"> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> 
+        </div>
+        <div class="emptyStar"> 
+                <i class="fas fa-star"></i>
+                </div>  
+        </div>
+
+<!-- Sous-bloc 3: "Hôtel les mouettes" et "Hôtel chez Amina" -->
+
+<!-- Proposition 5 -->
+        <div class="card5"> 
+        <img class="lodgingImg" src="images/lodgings/small_size/lodging5s.jpg" alt="lodging5Small">
+        <p>Hôtel les mouettes</br>
+<!-- Prix -->
+        Nuit à partir de 76<strong>€</strong></p>
+<!-- Classement -->
+<!-- 4 étoiles -->
+        
+        <div class="fullStar"> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+        </div>
+        <div class="emptyStar"> 
+                <i class="fas fa-star"></i>
+                </div> 
+        </div>
+<!-- Proposition 6 -->
+<div class="card6">  
+        <img class="lodgingImg" src="images/lodgings/small_size/lodging6s.jpg" alt="lodging6Small">
+        <p>Hôtel chez Amina</br>
+<!-- Prix -->
+        Nuit à partir de 96<strong>€</strong></p>
+<!-- Classement -->
+<!-- 5 étoiles -->
+        
+        <div class="fullStar"> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> 
+    </div> 
+<p>Afficher plus</p>
+        </div> 
+</article> 
+<!-- Bloc 2: Les plus populaires et Icone à droite insérer dans un a avec # pour les liens -->
+ 
+<aside>
+          <h3>
+            Les plus populaires
+            <i class="fas fa-chart-line"></i>
+        </h3>
+ <!-- Sous-bloc 1: "Hotel le soleil du matin" -->
+<!-- Proposition -->
+<div class="card7">   
+         <img class="asideImg" src="images/lodgings/small_size/lodging7s.jpg" alt="lodging7Small">
+        <p>Hôtel Le soleil du matin</br>
+        Nuit à partir de 128€ </p>
+            
+<!-- Classement -->
+<!-- 5 étoiles --> 
+        <div class="fullStar"> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+        </div> 
+</div>
+<!-- Sous-bloc 2: "Au coeur de l'eau Chambres d'hôtes" -->
+<div class="card8">   
+        <img class="asideImg" src="images/lodgings/small_size/lodging8s.jpg" alt="lodging8Small">
+<!-- Proposition -->
+        <p>Au coeur de l'eau Chambres d'hôtes</br> 
+<!-- Prix -->
+        Nuit à partir de 71€</p>
+<!-- Classement -->
+<!-- 4 étoiles -->
+        
+        <div class="fullStar"> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+        </div>
+        <div class="emptyStar"> 
+                <i class="fas fa-star"></i>
+        </div>  
+</div>
+<!-- Sous-bloc 3: "Hôtel tout bleu et blanc" -->
+<div class="card9">   
+        <img class="asideImg" src="images/lodgings/small_size/lodging9s.jpg" alt="lodging9Small">
+<!-- Proposition -->
+        <p>Hôtel tout bleu et blanc</br> 
+<!-- Prix -->
+         Nuit à partir de 68€</p>
+<!-- Classement -->
+<!-- 4 étoiles --> 
+        <div class="fullStar"> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+        </div>
+        <div class="emptyStar"> 
+                <i class="fas fa-star"></i>
+                </div>   
+</div>
+</aside>       
+ <!-- Bloc 3: Activités à Marseille --> 
+ <article class="article2">  
+        <h4> 
+            Activités à Marseille
+        </h4> 
+<!-- Sous-bloc 1: "Vieux-port" -->  
+        <div class="card10"> 
+        <img class="bigSize" src="images/activities/small_size/activite1s.jpg" alt="activite1s" width="115">
+            <p>Vieux-port</p>
+        </div>
+<!-- Sous-bloc 2: "Fort de Pomègues" et "Îles du Frioul" -->
+        <div class="card11"> 
+        <img class="smallSize" src="images/activities/small_size/activite2s.jpg" alt="activite2s" width="115">
+        <p>Fort de Pomègues</p>
+        </div>
+
+        <div class="card12">   
+            <img class="smallSize" src="images/activities/small_size/activite3s.jpg" alt="activite3s" width="115">
+            <p>Îles du Frioul</p>
+    </div>
+
+<!-- Sous-bloc 3: "Parc national des Calanques" -->
+        <div class="card13"> 
+            <img class="bigSize" src="images/activities/small_size/activite4s.jpg" alt="activite4s" width="115">
+            <p>Parc national des Calanques</p>
+        </div>
+<!-- Sous-bloc 4: "Notre-Dame-de-la-Garde" et "Parc Longchamp" --> 
+            
+        <div class="card14">
+            <img class="smallSize" src="images/activities/small_size/activite5s.jpg" alt="activite5s" width="115">
+            <p>Notre-Dame-de-la-Garde</p>
+        </div>
+        
+        <div class="card15">  
+            <img class="smallSize" src="images/activities/small_size/activite6s.jpg" alt="activite6s" width="115">
+            <p>Parc Longchamp</p>
+        </div>
+    </article>  
+
+<!-- Bas de page -->
+<footer> 
+    <div class="about">
+            <ul>
+        <li>A propos</li>
+        <li><a href="#"> Fonctionnement du site</a></li>
+        <li><a href="#"> Conditions générales de vente</a></li>
+        <li><a href="#">Données et confidentialité</a></li>
+</ul>
+    </div>
+
+    <div class="ourLodgings">
+            <ul>
+            <li>Nos hébergements</li> 
+            <!-- enlever le titre de la liste -->
+            <li><a href="#">Charte qualité</a></li> 
+            <li><a href="#">Soumettre votre hôtel</a></li>
+        </ul> 
+    </div>
+
+    <div class="assistance"> 
+            <ul>
+            <li>Assistance</li>
+            <li><a href="#">Centre d'aide</a></li> 
+            <li><a href="#">Nous contacter</a></li>
+        </ul>
+    </div> 
+
+<!-- Fin bas de page --> 
+</footer>
+</div>
+</body> 
+
+<!-- Fin page web -->
+
+</html>
