@@ -1,0 +1,199 @@
+/* Importation de la police d'écriture "Raleway" */
+@font-face {
+  font-family: "Raleway", sans-serif;
+  @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+}
+
+/* Taille du logo "Reservia" */
+.logo {
+  width: 91, 5px;
+  align-content: flex-start;
+}
+/* Position et apparence invisible des liens de navigation */
+header a:link {
+  text-decoration: none; 
+  color: #0065fc;
+}
+ 
+
+/* Titres principaux en gras et taille 22px */
+h1 h2 h3 h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Taille du sous-titre */
+.subtitle p {
+  font-size: 16px;
+}
+
+/* Apparence des boutons des filtres */
+.filters {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Taille de l'icone "localisation" */
+.location img {
+  width: 13px;
+  height: 18px;
+}
+
+/* Apparence des icones filtres en forme ronde */
+.filters img  {
+  width: 14px;
+  background-color: #deebff;
+  border-color: #f2f2f2;
+  border-width: 2px;
+  border-radius: 50%;
+  padding: 14px;
+  text-align: center; 
+} 
+
+li {   
+  display: inline;
+}
+
+/* Apparence de l'icône "information" en forme ronde */
+.info img {
+  width: 24px;
+  border-radius: 50%;
+  border-width: 1px;
+  border-color: #f2f2f2;
+  border-style: solid;
+}
+
+/* Taille du texte "information" */
+.info {
+  font-size: 16px;
+}
+
+/* Titre des résultats en gras */
+.titleResult {
+  font-weight: bold;
+}
+
+/* Taille et position de l'icône "les plus populaires" */
+.popularIcon {
+  width: 40px;
+  text-align: right;
+  margin-top: 50px;
+}
+
+/* Taille des images "les plus populaires" */
+.popularImg {
+  width: 115px;
+}
+
+/* Taille des étoiles */
+#star img {
+  width: 12px;
+}
+
+/* Couleur de fond des blocs en gris clair */
+.lodgingsResults {
+  background-color: #f2f2f2;
+}
+.mostPopular {
+  background-color: #f2f2f2;
+}
+
+.lodgingsResults img {
+  width: 115px;
+} 
+
+
+#grill {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 3fr 4fr 3fr 1fr; 
+  grid-template-areas:
+  "header" "header"
+  "main" "main"
+  "article1" "aside"
+  "artcle2" "article2"
+  "footer" "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+article1 {
+  grid-area: article1;
+  border-radius: 10px;
+  margin: auto;
+
+}
+
+aside {
+  grid-area: aside;
+  text-align: right; 
+  border-radius: 10px;
+  margin: auto;
+}
+
+article2 {
+  grid-area: article2;
+  border-radius: 10px;
+  margin: auto;
+
+}
+
+footer {
+  grid-area: footer;
+  text-align: justify;
+  text-align: center;
+  background-color: #f2f2f2; 
+  text-decoration: none;
+}
+
+@media screen and (max-width: 580px) {
+  #grill {
+    display: grid;  
+grid-template-columns: 1fr; 
+grid-template-areas:
+"header"  
+"main"
+"article1"  
+"aside"
+"article2"
+"footer";  
+} 
+ /* order :nth-child(1) { order: 1; }
+  order :nth-child(2) { order: 2; }
+  order :nth-child(3) { order: 4; }
+  order :nth-child(4) { order: 3; }
+  order :nth-child(5) { order: 5; }
+  order :nth-child(6) { order: 6; } */
+}
+
+/*
+#container .lodgingsResults {
+  display: grid;
+  border-radius: 10px;
+  width: 880px;
+  height: 625px;
+  margin-left: 50px;
+  margin-right: 40px;
+}
+ 
+ 
+*/
+
+/*Bord arrondi et bouton bleu pour la recherche de localisation */
+
+/* Forme ronde des boutons de filtres */
+
+/*Disposition rectangulaire des sous-blocs "Hébergements" au format 2x3 */
+
+/* Disposition superposée des sous-bloc "Les plus populaires" */
+ 
+
+/* Disposition du texte et couleur de fond du bas de page */
+ 
