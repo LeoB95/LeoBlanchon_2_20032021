@@ -4,18 +4,13 @@ Projet 2 Reservia
 LIEN WEB GIT PAGES =
 https://leob95.github.io/LeoBlanchon_2_20032021/
 
-https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white
+ 
+![Reservia](https://user-images.githubusercontent.com/78887001/116440552-eb17fd00-a850-11eb-8133-97f9bf9d6ee1.jpg)
+![Windows-0078D6](https://user-images.githubusercontent.com/78887001/116440382-bb68f500-a850-11eb-8cb5-c850666ada92.jpg)
+![Made for-VSCode-1f425f](https://user-images.githubusercontent.com/78887001/116440405-c2900300-a850-11eb-858d-5e26e2173702.jpg)
+![HTML5-E34F26](https://user-images.githubusercontent.com/78887001/116440423-c885e400-a850-11eb-93fd-802c8f768fd8.jpg)
+![CSS3-1572B6](https://user-images.githubusercontent.com/78887001/116440436-cc196b00-a850-11eb-93f7-3eaa5875e8f1.jpg)
+![Maintained_-yes-green](https://user-images.githubusercontent.com/78887001/116440467-d50a3c80-a850-11eb-8782-9a63b9e1cc0b.jpg)
+![website](https://user-images.githubusercontent.com/78887001/116440472-d6d40000-a850-11eb-9358-870e7a5c99dc.jpg)
+![Ask me-anything-1abc9c](https://user-images.githubusercontent.com/78887001/116440481-da678700-a850-11eb-973a-af188b5d3699.jpg)
 
-https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
-
-https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
-
-https://img.shields.io/badge/Maintained%3F-yes-green.svg
-
-https://img.shields.io/website-up-down-green-red/http/monip.org.svg
-
-https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg
-
-https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg
-
-https://github-readme-stats.vercel.app/api/top-langs/?username={leob95}&theme=blue-green
