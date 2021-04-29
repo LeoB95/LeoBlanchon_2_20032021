@@ -480,6 +480,7 @@ footer p {
     justify-items: center;
     margin-top: 5px;
     margin-bottom: 20px;
+    width: auto;
   }
   /* Position du logo et marge */
   #logo {
@@ -600,7 +601,6 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 0;
   }
   aside img {
     width: 40%;
@@ -634,7 +634,6 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 0;
   }
   /* Taille des résultats article 1 */
   .lodgingCard {
@@ -685,7 +684,6 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 0;
   }
   .actiBox {
     max-width: 1023px;
@@ -753,7 +751,6 @@ footer p {
     justify-items: center;
     margin-top: 5px;
     margin-bottom: 20px;
-    max-width: 767px;
   }
   /* Position du logo et marge */
   #logo {
@@ -795,7 +792,6 @@ footer p {
   /* Placement flex de la section "main" */
   main {
     order: 2;
-    width: auto;
     justify-items: center;
   }
   /* Taille du titre h1 */
@@ -866,7 +862,7 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 0;
+    margin: 10px;
   }
   aside img {
     width: 40%;
@@ -886,7 +882,7 @@ footer p {
     background-color: white;
     justify-items: center;
 
-    margin: 0;
+    margin: 10px;
   }
   /*Marge du titre "hébergements à Marseille" version mobile */
   h2 {
@@ -929,7 +925,7 @@ footer p {
   /* Position de l'article 2 version mobile */
   article.article2 {
     order: 5;
-    margin: 0;
+    margin: 10px;
   }
 
   .activityCards {
@@ -953,7 +949,7 @@ footer p {
   /* Taille des images de l'article 2 version mobile */
   #article2 img {
     width: 100%;
-    height: 180px;
+    height: 200px;
   }
   /* Taille et marge de la section information des résultats article 2 */
   #article2 p {
@@ -984,3 +980,4 @@ footer p {
     align-items: center;
   }
 }
+
