@@ -26,7 +26,7 @@ body {
 header {
   grid-area: header;
   display: flex;
-  margin-top: 1px;
+  margin-top: 2px;
   margin-right: 10px;
 }
 /* Taille et marge du contenu de la grille */
@@ -56,6 +56,16 @@ header {
 /* Effet de survol avec couleur de la police */
 .navBar a:hover {
   color: #0065fc;
+}
+.mainBar2 a:active {
+   border-top: solid 3px #0065fc;
+  transform: scale(1.05);
+    color: #0065fc;
+}
+.mainBar2 a:visited {
+   border-top: solid 3px #0065fc;
+  transform: scale(1.05);
+    color: #0065fc;
 }
 /* Organisation de la partie "main" en colonne avec flex */
 main {
@@ -518,6 +528,16 @@ footer p {
     border-bottom: solid 2.5px #0065fc;
     transform: scale(1.05);
   }
+ .mainBar2 a:active {
+   border-top: solid 3px #0065fc;
+  transform: scale(1.05);
+    color: #0065fc;
+}
+.mainBar2 a:visited {
+   border-top: solid 3px #0065fc;
+  transform: scale(1.05);
+    color: #0065fc;
+}
   /* Placement flex de la section "main" */
   main {
     order: 2;
@@ -790,6 +810,16 @@ footer p {
     border-bottom: solid 2.5px #0065fc;
     transform: scale(1.05);
   }
+  .mainBar2 a:active {
+   border-top: solid 3px #0065fc;
+  transform: scale(1.05);
+    color: #0065fc;
+}
+.mainBar2 a:visited {
+   border-top: solid 3px #0065fc;
+  transform: scale(1.05);
+    color: #0065fc;
+}
   /* Placement flex de la section "main" */
   main {
     order: 2;
