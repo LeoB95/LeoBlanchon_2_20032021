@@ -690,6 +690,7 @@ footer p {
     width: auto;
     max-height: 460px;
     height: auto;
+   margin-bottom: 20px;
   }
   /* Taille des images de l'article 2 version mobile */
   .article2 img {
