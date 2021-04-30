@@ -731,7 +731,7 @@ footer p {
   }
 }
 /* Réorganisation des grilles pour affichage smartphone avec "aside" avant "article1" */
-@media screen and (max-width: 767px) {
+ @media screen and (max-width: 767px) {
   #grill {
     display: flex;
     flex-direction: column;
@@ -792,8 +792,7 @@ footer p {
   /* Placement flex de la section "main" */
   main {
     order: 2;
-   display: flex;
-   flex-wrap: wrap;
+    display: flex;
     justify-items: center;
   }
   /* Taille du titre h1 */
@@ -828,7 +827,7 @@ footer p {
   }
   /* Ajustement de la taille de la barre de saisie pour la recherche version mobile */
   input {
-   max-width: 300px;
+    max-width: 300px;
     width: 100%;
   }
   /* Positionnement de la partie "filtres" */
