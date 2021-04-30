@@ -828,7 +828,7 @@ footer p {
   }
   /* Ajustement de la taille de la barre de saisie pour la recherche version mobile */
   input {
-   max-width: 300px
+   max-width: 300px;
     width: 100%;
   }
   /* Positionnement de la partie "filtres" */
