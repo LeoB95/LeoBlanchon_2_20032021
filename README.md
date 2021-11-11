@@ -3,8 +3,7 @@ Projet 2 Reservia
 
 
 LIEN WEB GIT PAGES =
-https://leob95.github.io/LeoBlanchon_2_20032021/
-
+https://leob95.github.io/OC_LeoB95_P2_Reservia/
  ![Reservia](https://user-images.githubusercontent.com/78887001/116443151-95911f80-a853-11eb-80f7-b1cc39e5a194.png)
 
  ![Windows-0078D6](https://user-images.githubusercontent.com/78887001/116440382-bb68f500-a850-11eb-8cb5-c850666ada92.jpg)
