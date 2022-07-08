@@ -3,7 +3,7 @@ Projet 2 Reservia
 
 
 LIEN WEB GIT PAGES =
-https://leob95.github.io/P2_Leo_Blanchon_Reservia/
+https://leob95.github.io/OC_P2_Reservia/
  ![Reservia](https://user-images.githubusercontent.com/78887001/116443151-95911f80-a853-11eb-80f7-b1cc39e5a194.png)
 
 Formation OpenClassrooms - Parcours développeur web.
